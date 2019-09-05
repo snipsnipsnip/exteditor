@@ -1,0 +1,22 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Make a XPI
+      run: make
+    - name: Zip
+      run: zip -9 "$(echo exteditor_*.xpi).zip" exteditor_*.xpi
+    - name: SHA256
+      run: sha256sum *.xpi*
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: ESLint checks
+      uses: stefanoeb/eslint-action@1.0.0
