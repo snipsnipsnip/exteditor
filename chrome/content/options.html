@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html data-text data-attrdir="@@bidi_dir" data-attrlang="@@ui_locale">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="options.css">
+</head>
+
+<body>
+    <fieldset>
+        <legend data-text="exteditor_exe.label"></legend>
+        <label id="exteditor_editor">
+            <span data-text="exteditor_editor.value"></span>
+            <input type="text" id="exteditor_leEditor" preftype="string" prefattribute="value"
+                prefstring="exteditor.default.editor">
+            <button data-text="exteditor_btBrowse.label"></button>
+            <input type="file" id="exteditor_btBrowse">
+        </label>
+        <label data-text="exteditor_cbEditorUnicode.label">
+            <input type="checkbox" id="exteditor_cbEditorUnicode" preftype="bool" prefattribute="checked"
+                prefstring="exteditor.editor.unicode">
+        </label>
+        <label data-text="exteditor_cbEditor83Filename.label">
+            <input type="checkbox" id="exteditor_cbEditor83Filename" preftype="bool" prefattribute="checked"
+                prefstring="exteditor.editor.83filename">
+        </label>
+        <p id="exteditor_warn" data-text="exteditor_warn.value"></p>
+    </fieldset>
+    <fieldset id="editheaders">
+        <legend>
+            <label data-text="exteditor_cbEditHeaders.label">
+                <input type="checkbox" id="exteditor_cbEditHeaders" data-title="exteditor_cbEditHeaders.tooltiptext"
+                    data-text
+                    oncommand="ExternalEditor.activate('exteditor_cbEditHeaders', 'exteditor_brcstEditHeaders')"
+                    preftype="bool" prefattribute="checked" prefstring="exteditor.headers.edit">
+            </label>
+        </legend>
+        <div>
+            <label data-text="exteditor_cbEditHeaderSubject.label">
+                <input type="checkbox" id="exteditor_cbEditHeaderSubject" preftype="bool" prefattribute="checked"
+                    prefstring="exteditor.headers.edit.subject">
+            </label>
+            <label data-text="exteditor_cbEditHeaderTo.label">
+                <input type="checkbox" id="exteditor_cbEditHeaderTo" preftype="bool" prefattribute="checked"
+                    prefstring="exteditor.headers.edit.to">
+            </label>
+            <label data-text="exteditor_cbEditHeaderCc.label">
+                <input type="checkbox" id="exteditor_cbEditHeaderCc" preftype="bool" prefattribute="checked"
+                    prefstring="exteditor.headers.edit.cc">
+            </label>
+        </div>
+        <div>
+            <label data-text="exteditor_cbEditHeaderBcc.label">
+                <input type="checkbox" id="exteditor_cbEditHeaderBcc" preftype="bool" prefattribute="checked"
+                    prefstring="exteditor.headers.edit.bcc">
+            </label>
+            <label data-text="exteditor_cbEditHeaderReplyTo.label">
+                <input type="checkbox" id="exteditor_cbEditHeaderReplyTo" preftype="bool" prefattribute="checked"
+                    prefstring="exteditor.headers.edit.replyto">
+            </label>
+            <label data-text="exteditor_cbEditHeaderNewsgroup.label">
+                <input type="checkbox" id="exteditor_cbEditHeaderNewsgroup" preftype="bool" prefattribute="checked"
+                    prefstring="exteditor.headers.edit.newsgroup">
+            </label></div>
+    </fieldset>
+    <script type="module" src="options.js"></script>
+</body>
+
+</html>

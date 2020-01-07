@@ -18,6 +18,9 @@
       "page": "chrome://exteditor/content/settings.xul"
     }
   },
+  "options_ui": {
+    "page": "chrome/content/options.html"
+  },
   "icons": {
     "32": "chrome/content/exteditor.png"
   }

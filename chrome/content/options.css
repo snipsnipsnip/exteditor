@@ -1,0 +1,47 @@
+body {
+    font: caption;
+}
+
+body,
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+#exteditor_editor {
+    display: flex;
+}
+
+#exteditor_editor span {
+    display: inline-box;
+}
+
+fieldset>div {
+    display: flex;
+}
+
+#editheaders {
+    flex-wrap: wrap;
+}
+
+input[type="text"] {
+    flex: auto;
+    font-family: monospace;
+}
+
+input[type="file"] {
+    display: none
+}
+
+label {
+    margin: 0.25em;
+    flex: 1;
+}
+
+fieldset {
+    margin: 0.5em;
+}
+
+#exteditor_editor span {
+    margin: 0.5em 0.5em 0.5em 0;
+}
